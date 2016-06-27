@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "438F4F346A1EB2EE27C09F60390F9AE9E9C8CAC1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BD4CED6CFC8BAB9BB31A636BF7E5FFBB13DAB9B8" : 0,
+    "438F4F346A1EB2EE27C09F60390F9AE9E9C8CAC1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F8960E2A-C693-4D60-9D9E-464A42D594BE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BD4CED6CFC8BAB9BB31A636BF7E5FFBB13DAB9B8" : "",
+    "438F4F346A1EB2EE27C09F60390F9AE9E9C8CAC1" : "Victormakestagram\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Makestagram",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Makestagram-Swift-V2-Starter-master\/Makestagram.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rubyvictor\/Victormakestagram.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "438F4F346A1EB2EE27C09F60390F9AE9E9C8CAC1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rubyvictor\/MakeSchoolNotesProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BD4CED6CFC8BAB9BB31A636BF7E5FFBB13DAB9B8"
+    }
+  ]
+}
