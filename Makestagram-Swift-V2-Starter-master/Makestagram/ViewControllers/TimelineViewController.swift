@@ -38,16 +38,22 @@ class TimelineViewController: UIViewController {
             
         }
         func takePhoto() {
+            
             // instantiate photo taking class, provide callback for when photo is selected
+            
             photoTakingHelper = PhotoTakingHelper(viewController: self.tabBarController!) { (image: UIImage?) in
                 
-                //this part of the code is the closure. whenever the photoTakingHelper has received an image, it will call this closure. It is a trailing closure, which is a closure outside of the class parantheses
-                // don't do anything, yet...
+                let post = Post()
+                post.image = image
+                post.uploadPost()
+                    
+                }
+            
             }
         }
         
         
-    }
+    
     
 
     /*

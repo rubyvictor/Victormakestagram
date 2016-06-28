@@ -32,6 +32,7 @@
 		62C8C1F01B06BD6500DC3EA7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C8C1EE1B06BD6500DC3EA7 /* LaunchScreen.xib */; };
 		62C8C1FC1B06BD6500DC3EA7 /* MakestagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C8C1FB1B06BD6500DC3EA7 /* MakestagramTests.swift */; };
 		A1B2FA72BA099CDD515AAF24 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07445E11707B59B7A69A1763 /* Pods_Makestagram.framework */; };
+		B10D55001D2230C200563526 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10D54FF1D2230C200563526 /* Post.swift */; };
 		B157BE391D210829009CD343 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157BE381D210829009CD343 /* TimelineViewController.swift */; };
 		B157BE3B1D21084A009CD343 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157BE3A1D21084A009CD343 /* PhotoViewController.swift */; };
 		B157BE3D1D210863009CD343 /* FriendSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B157BE3C1D210863009CD343 /* FriendSearchViewController.swift */; };
@@ -95,6 +96,7 @@
 		62C8C1FA1B06BD6500DC3EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C8C1FB1B06BD6500DC3EA7 /* MakestagramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakestagramTests.swift; sourceTree = "<group>"; };
 		6F27A422444057EF6CBE89AA /* Pods-MakestagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MakestagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MakestagramTests/Pods-MakestagramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B10D54FF1D2230C200563526 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B157BE381D210829009CD343 /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		B157BE3A1D21084A009CD343 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		B157BE3C1D210863009CD343 /* FriendSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		62C8C1E21B06BD6500DC3EA7 /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				B10D54FE1D22305700563526 /* Models */,
 				B157BE421D2111D7009CD343 /* PhotoTaking */,
 				6277189C1B0A58E800AF5C6E /* Helpers */,
 				627718811B0A581600AF5C6E /* ViewControllers */,
@@ -252,6 +255,14 @@
 				62C8C1FA1B06BD6500DC3EA7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B10D54FE1D22305700563526 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B10D54FF1D2230C200563526 /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B157BE421D2111D7009CD343 /* PhotoTaking */ = {
@@ -482,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				627718901B0A581600AF5C6E /* Filter.swift in Sources */,
+				B10D55001D2230C200563526 /* Post.swift in Sources */,
 				B157BE3D1D210863009CD343 /* FriendSearchViewController.swift in Sources */,
 				627718A01B0A58E800AF5C6E /* ParseLoginHelper.swift in Sources */,
 				627718911B0A581700AF5C6E /* FilterCollectionViewCell.swift in Sources */,
