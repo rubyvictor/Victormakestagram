@@ -58,11 +58,47 @@
                     <view key="view" contentMode="scaleToFill" id="V8s-o6-mM9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="320" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d4X-sh-g3H">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="320" id="o4X-dL-a7d" customClass="PostTableViewCell" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="320"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o4X-dL-a7d" id="EDS-im-b3z">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="319"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oeX-iE-O0i">
+                                                    <rect key="frame" x="0.0" y="-9" width="600" height="328"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="postImageView" destination="oeX-iE-O0i" id="fMW-sK-rfg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jTN-Aw-ZWS" id="bm4-9h-wbf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d4X-sh-g3H" firstAttribute="leading" secondItem="V8s-o6-mM9" secondAttribute="leading" id="8Ou-8V-Mbd"/>
+                            <constraint firstAttribute="trailing" secondItem="d4X-sh-g3H" secondAttribute="trailing" id="AYa-aM-9GS"/>
+                            <constraint firstItem="Pjw-pn-a2P" firstAttribute="top" secondItem="d4X-sh-g3H" secondAttribute="bottom" id="B1Q-dT-Q2P"/>
+                            <constraint firstItem="d4X-sh-g3H" firstAttribute="top" secondItem="TxY-uj-1gd" secondAttribute="bottom" id="SZg-h9-3ln"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" id="45z-gN-IEj">
                         <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="d4X-sh-g3H" id="RJi-wC-FTZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ayH-aT-fJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
